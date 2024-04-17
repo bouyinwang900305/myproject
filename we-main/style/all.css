@@ -17,7 +17,10 @@ body {
     max-width: 1200px;
     box-sizing: border-box;
 }
-
+.container-md{
+    max-width: 800px;
+    box-sizing: border-box;
+}
 
 .mx-auto {
     margin-left: auto;
@@ -86,8 +89,8 @@ body {
 /* banner ---------------------------------------- */
 
 .banner {
-    background-image: linear-gradient(135deg, #cf7688 20%, #f4ba54 100%);
-    color: #fff;
+    background-image: linear-gradient(135deg, #fbddda 40%, #ffffff 100%,#f7d2ce 20%);
+    color: #f3c9c9;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
@@ -96,8 +99,7 @@ body {
     align-items: center;
 }
 
-.banner-head,
-.banner-body {
+.banner-head, .banner-body {
     width: 50%;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -109,6 +111,9 @@ body {
 
 .banner-body {
     /* background-color: yellowgreen; */
+    left: 6rem;
+    margin-top: -3rem;
+    opacity: .9;
 }
 
 .banner-index .banner-head,
@@ -128,36 +133,38 @@ body {
 }
 
 .banner-title {
-    font-size: 2.2rem;
+    font-size: 5rem;
     margin-bottom: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #858383;
 }
 
-.banner-title-line {
-    position: relative;
-}
+
 
 .banner-title-line::after {
-    position: absolute;
-    bottom: -1rem;
     content: "";
     border-top: solid 4px rgba(255, 255, 255, .5);
     width: 1.5em;
+    position: absolute;
     left: 0;
-
+    bottom: -1rem;
 }
 
 .banner-small {
-    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.5rem;
     margin-top: .5rem;
     display: block;
+    color: #fffefe;
+    opacity: .7;
+
 }
 
 .banner-subTitle {
     font-size: 1.75rem;
     margin-bottom: 2rem;
     line-height: 1.5;
-    color: rgba(255, 255, 255, .7);
+    color: rgba(242, 164, 164, 0.7);
 }
 
 .banner-ul {
@@ -177,30 +184,40 @@ body {
 }
 
 .banner-desc {
+    margin-top: 50px;
     line-height: 1.6;
+    color: #b1b0b0;
 }
-.banner-desc+ .banner-desc{
+
+.banner-desc + .banner-desc {
     margin-top: 1rem;
 }
 
-.banner-desc-lg{
+.banner-desc-lg {
+    
     font-size: 1.5rem;
     line-height: 1.3;
 }
 
 .banner-btns {
     margin-top: 2rem;
+    
 }
 
 .banner-btn {
-    color: #fff;
+    color: #edbaba;
+    background-color: #fff;
     text-decoration: none;
-    text-transform: uppercase;
-    border: solid 2px #fff;
-    padding: 1rem 3rem;
-    border-radius: 5px;
+    font-size: 1.3rem;
+    border: solid 1px #fff;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    border-radius: 9px;
     transition-duration: .3s;
-    display: inline-block;
+    flex-direction: column;
+    opacity: .7;
 }
 
 .banner-btn:hover {
@@ -210,12 +227,10 @@ body {
 .banner-img {
     max-width: 100%;
     height: auto;
+    padding-left: 40rem;
 }
 
-.banner-img-mobile,
-.banner-img-pad {
-    position: absolute;
-}
+
 
 .banner-img-mobile {
     left: 0;
@@ -236,38 +251,15 @@ body {
     object-fit: cover;
 }
 
+/* footer ---------------------------- */
+
 .footer {
+    background-color: #666;
     display: flex;
     justify-content: space-between;
-    background-color: #666;
-    padding: 7rem 1rem 1rem;
     align-items: flex-end;
-    clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
-}
-
-.footer-img-logo {
-    max-width: 40px;
-    height: auto;
-    margin-bottom: .5rem;
-}
-
-.footer-link {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: .9rem;
-    font-weight: 600;
-    transition-duration: .3s;
-}
-
-.footer-link:hover {
-    color: #cf7688;
-}
-
-.footer-desc {
-    font-size: .9rem;
-    color: #fff;
-    text-transform: uppercase;
+    padding: 7rem 1rem 1rem;
+    clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
 }
 
 .footer-ul {
@@ -278,22 +270,46 @@ body {
     margin-left: 1rem;
 }
 
-.aside {
-    z-index: 10;
-    position: fixed;
-    right: 1rem;
-    bottom: 15rem;
-}
-
-.aside-link {
-    color: rgba(0, 0, 0, .2);
+.footer-link {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .9rem;
     transition-duration: .3s;
 }
 
-.aside-link:hover {
-    color: rgba(0, 0, 0, .5);
+.footer-link:hover {
+    color: #cf7688;
+}
+
+.footer-img-logo {
+    max-width: 40px;
+    height: auto;
+    margin-bottom: .5rem;
+}
+
+.footer-desc {
+    font-size: .9rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* aside ------------------- */
+
+.aside {
+    position: fixed;
+    right: 1rem;
+    bottom: 15rem;
+    z-index: 10;
 }
 
 .aside-link-top {
     font-size: 3rem;
+    color: rgba(0, 0, 0, .2);
+    transition-duration: .3s;
+}
+
+.aside-link-top:hover {
+    color: rgba(0, 0, 0, .5);
 }

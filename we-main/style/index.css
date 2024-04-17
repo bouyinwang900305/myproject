@@ -16,12 +16,12 @@
 }
 
 .base-body {
-    margin-top: 3rem;
+    margin-top: 5rem;
     margin-bottom: 3rem;
 }
 
 .base-title {
-    text-transform: uppercase;
+   color: #b4b2b2;
     font-size: 2rem;
     letter-spacing: 10px;
 }
@@ -40,6 +40,7 @@
 .base-btn:hover {
     background-color: #f6cdd5;
 }
+
 
 /* service -------------------------- */
 
@@ -83,6 +84,8 @@
     color: #cf7688;
 }
 
+/* project ---------------------------------------- */
+
 .base-project {
     background-image: linear-gradient(#f6f6f6 0, #fff 50%);
 }
@@ -94,8 +97,8 @@
 
 .project-item {
     width: 20%;
-    margin-bottom: 1rem;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .project-img {
@@ -103,34 +106,34 @@
     height: auto;
 }
 
+/* intro ------------------------------------ */
+
 .base-intro {
+    background-image: url("../images/intro-bg.jpg");
     background-attachment: fixed;
-    background-image: url(../images/intro-bg.jpg);
-    clip-path: polygon(0 0, 100% 10%, 100% 85%, 0% 100%);
-    position: relative;
     background-size: cover;
+    clip-path: polygon(0 0, 100% 10%, 100% 85%, 0 100%);
+    position: relative;
 }
 
 .base-intro::before {
-    content: "333";
+    content: "";
+    background-color: rgba(0, 0, 0, .7);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, .3));
 }
 
-.intro-desc {
-    color: #fff;
-    margin-top: 1em;
-    margin-bottom: 1rem;
-    line-height: 1.7rem;
-}
-
-.base-intro .base-head {
+.base-intro .base-head,
+.base-intro .base-foot {
     text-align: left;
+}
+
+.base-intro .base-title {
+    letter-spacing: 0;
 }
 
 .base-intro .base-title-small,
@@ -139,18 +142,14 @@
 }
 
 .base-intro .base-title-small {
-    color: #ddd;
+    color: #ccc;
     font-size: 2.5rem;
 }
 
 .base-intro .base-title-primary {
-    margin-top: .5rem;
     color: #fff;
     font-size: 3.5rem;
-}
-
-.base-intro .base-btn {
-    text-align: left;
+    margin-top: .5rem;
 }
 
 .base-intro .base-btn {
@@ -162,42 +161,37 @@
     background-color: rgba(255, 255, 255, .2);
 }
 
+.intro-desc {
+    color: #fff;
+    line-height: 1.7;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* build ---------------------------------------- */
+
 .base-build .base-body {
-    max-width: 400px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .build-li {
+    background-color: #ccc;
     padding: 1.5rem 3rem;
+    text-align: center;
     color: rgba(255, 255, 255, .9);
+    /* clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%); */
     border-radius: 5px;
     transform: skew(-15deg);
-    background-color: #ddd;
-    text-align: center;
 }
 
 .build-li+.build-li {
     margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.build-li ::content {
-    transform: skew(15deg);
-}
-
-.build-title {
-    font-size: 1.2rem;
-    font-weight: 1.5;
-}
-
-.build-desc {
-    margin-top: 1rem;
-    line-height: 1.5rem;
 }
 
 .build-li-1 {
-    background-color: #cf7688;
+    background-color: #f5ba54;
 }
 
 .build-li-2 {
@@ -206,4 +200,18 @@
 
 .build-li-3 {
     background-color: #cf7688;
+}
+
+.build-content {
+    transform: skew(15deg);
+}
+
+.build-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.build-desc {
+    line-height: 1.5;
+    margin-top: 1rem;
 }
