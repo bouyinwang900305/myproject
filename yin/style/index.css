@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+.base {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.base-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.base-head,
+.base-foot {
+    text-align: center;
+}
+
+.base-body {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.base-title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 10px;
+}
+
+.base-btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    border: solid 2px #ffffff;
+    padding: 1rem 3rem;
+    display: inline-block;
+    color: #ffffff;
+    border-radius: 5px;
+    transition-duration: .3s;
+    background-color: #9f9e9e;
+    opacity: .7;
+}
+
+.base-btn:hover {
+    background-color: #969192;
+}
+
+
+
+
+
+
+/* project ---------------------------------------- */
+
+.base-project {
+   background-color: rgba(157, 157, 157, 0.3);
+   color: #898989;
+}
+
+.project-items {
+    display: flex;
+    flex-wrap: wrap;
+   
+   
+    
+}
+
+.project-item {
+    
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    margin-bottom: 6rem;
+    margin-left: 4rem;
+    }
+
+.project-img {
+    max-width: 100%;
+    height: auto;
+    width: 20rem;
+    background-color: #ffffff;
+    padding: 20px;
+    padding-top:10px;
+    padding-bottom: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+   
+}
+.project-desc{
+    position: relative;
+}
+
+.base-foot{
+    color: #000;
+}
+
+
+/* build ---------------------------------------- */
+
+.build{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+.base-build .base-body {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.build-li {
+    display: flex;
+    
+    background-color: #ccc;
+    text-align: center;
+    margin-left :auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 30px;
+    border-radius: 10%;
+
+
+  
+  
+}
+.build-ol{
+    font-size: 30px;
+    padding: auto;
+    display: flex;
+    margin: auto;
+    
+   
+}
+
+
+
+.build-li-1 {
+   width: 15rem;
+   background-color: rgba(243, 171, 171, 0.5);    
+   margin-right: 30px;
+   margin:auto;
+   
+  
+   }
+
+.build-li-2 {
+    width: 15rem;
+    background-color:rgba(242, 212, 212, 0.5);
+    margin-right: 30px;
+    margin:auto;
+  
+}
+
+.build-li-3 {
+    width: 15rem;
+    background-color:rgba(211, 121, 121, 0.5);
+    margin:auto;
+    
+
+}
+
+
+.build-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    
+}
+
+.build-desc {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 3rem;
+
+}
+/* intro ------------------------------------ */
+
+.base-intro {
+    margin-top: 40px;
+    background-image: url("../images/包裝背景圖.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 100%);
+    position: relative;
+}
+
+.base-intro::before {
+    content: "";
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.base-intro .base-head,
+.base-intro .base-foot {
+    text-align: left;
+}
+
+.base-intro .base-title {
+    letter-spacing: 0;
+}
+
+.base-intro .base-title-small,
+.base-intro .base-title-primary {
+    display: block;
+}
+
+.base-intro .base-title-small {
+    color: #ccc;
+    font-size: 2.5rem;
+}
+
+.base-intro .base-title-primary {
+    color: #fff;
+    font-size: 3.5rem;
+    margin-top: .5rem;
+}
+
+.base-intro {
+    color: #fff;
+    border-color: #fff;
+}
+
+.intro-desc {
+    color: #fff;
+    line-height: 1.7;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

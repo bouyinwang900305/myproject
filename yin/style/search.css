@@ -1,0 +1,43 @@
+@charset "utf-8";
+.base {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.base-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.base-head,
+.base-foot {
+    text-align: center;
+}
+
+.base-body {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.base-title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 10px;
+}
+
+
+.banner-search{
+    font-size: 25px;
+    letter-spacing: 7px;
+    margin-left: 570px;
+}
+
+
+
+.banner-btns{
+    color: #000;
+    padding-left: 540px;
+   
+    height: 400px;
+    font-size: 100px;
+}
